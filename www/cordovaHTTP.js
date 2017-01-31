@@ -175,6 +175,7 @@ if (typeof angular !== "undefined") {
                 return makePromise(http.downloadFile, [url, params, headers, filePath], true);
             }
         };
+        window.cordovaHTTP = cordovaHTTP;
         return cordovaHTTP;
     });
 } else {
